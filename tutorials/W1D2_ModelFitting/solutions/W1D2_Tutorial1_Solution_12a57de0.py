@@ -15,7 +15,7 @@ def mse(x, y, theta_hat):
   y_hat = theta_hat * x
 
   # Compute mean squared error
-  mse = np.mean((y - y_hat)**2)
+  mse = np.mean((y - y_hat)**2) / len(y)
 
   return mse
 
